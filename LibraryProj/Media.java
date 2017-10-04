@@ -43,5 +43,7 @@ public interface Media {
      * @param media Some media to evaluate against
      * @return whether they are a match
      */
-    boolean equals(Media media);
+    default boolean equals(Media media) {
+        return this.getCategory() == media.getCategory() && this.getTitle() == media.getCategory();
+    }
 }
