@@ -6,14 +6,14 @@ public class Visitor {
     //ownedBooks: Inventory
     //overdueBalance: BigDecimal
     
-    final private static String name = new String();
-    private static Inventory checkedOutMedia = new Inventory();
-    private static BigDecimal overdueBalance = new BigDecimal(0);
+    final private String name;
+    final private Inventory checkedOutMedia;
+    final private BigDecimal overdueBalance;
     
     Visitor (String name){
-        Visitor.name = name; 
-        Inventory checkedOutMedia = null;
-        BigDecimal overdueBalance = BigDecimal.valueOf(0.00);
+        this.name = name;
+        checkedOutMedia = new Inventory();
+        overdueBalance = new BigDecimal(0.00);
     }
     
     public String getName() {
