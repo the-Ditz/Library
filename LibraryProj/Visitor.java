@@ -39,7 +39,5 @@ public class Visitor {
     public void setOverdueBalance(BigDecimal amount) {
         overdueBalance.add(amount);
     }
-    
-    
 
 }

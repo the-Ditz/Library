@@ -1,5 +1,3 @@
-package LibraryProj;
-
 public interface Media {
 
     public static final int START_OF_CLASSNAME = 6;

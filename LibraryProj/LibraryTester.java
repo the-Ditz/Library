@@ -1,5 +1,3 @@
-package LibraryProj;
-
 import java.math.BigDecimal;
 
 public class LibraryTester {

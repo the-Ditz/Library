@@ -1,5 +1,3 @@
-package LibraryProj;
-
 public class Reference implements Media {
 
     private String title;

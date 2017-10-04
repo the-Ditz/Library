@@ -1,5 +1,3 @@
-package LibraryProj;
-
 import java.util.ArrayList;
 
 public class Library {

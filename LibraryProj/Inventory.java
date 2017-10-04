@@ -1,5 +1,3 @@
-package GroupProj.LibrarySystem;
-
 import java.util.ArrayList;
 
 public class Inventory {
