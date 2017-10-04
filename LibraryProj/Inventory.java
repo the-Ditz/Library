@@ -7,7 +7,7 @@ public class Inventory {
      * Add a media item if not a duplicate.
      */
     public void addItem(Media media) {
-        if (indexOf(media.getTitle()) != -1) {
+        if (indexOf(media.getTitle()) == -1) {
             contents.add(media);
         }
     }
