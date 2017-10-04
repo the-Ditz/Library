@@ -29,6 +29,13 @@ public class Inventory {
     public Media getMedia(int i) {
         return contents.get(i);
     }
+
+    /*
+     * Return inventory.
+     */
+    public ArrayList<Media> getMedia() {
+        return contents;
+    }
     
     /*
      * Return number of items in inventory.

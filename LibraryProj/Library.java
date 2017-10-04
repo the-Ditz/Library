@@ -13,9 +13,9 @@ public class Library {
      */
     public ArrayList<Media> searchMedia(String term) {
         ArrayList<Media> matches = new ArrayList<>();
-        for (int i=0;i<inventory.getInventorySize();i++) {
-            if (inventory.getMedia(i).getTitle().contains(term) || inventory.getMedia(i).getCategory().contains(term)) {
-                matches.add(inventory.getMedia(i));
+        for (Media media : inventory.getMedia()) {
+            if (media.matches(term)) {
+                matches.add(media);
             }
         }
         return matches;
