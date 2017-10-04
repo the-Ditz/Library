@@ -9,7 +9,7 @@ public class Library {
     ArrayList<Visitor> visitors = new ArrayList<>();
 
     /**
-     * Returns matches 
+     * Returns matches where term is found in the title or category.
      */
     public ArrayList<Media> searchMedia(String term) {
         ArrayList<Media> matches = new ArrayList<>();
@@ -21,7 +21,7 @@ public class Library {
         return matches;
     }
 
-    /*
+    /**
      * Set an item as checked out by a specific visitor.
      */
     public void checkOut(Media media) {
@@ -31,14 +31,14 @@ public class Library {
         return;
     }
 
-    /*
+    /**
      * Add a new item to the library.
      */
     public void addMedia(Media media) {
         inventory.addItem(media);
     }
 
-    /*
+    /**
      * Add a new visitor to the library.
      */
     public void addVisitor(Visitor visitor) {
