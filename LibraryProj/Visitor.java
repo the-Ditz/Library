@@ -27,9 +27,18 @@ public class Visitor {
         return overdueBalance;
     }
     
-    // appends the visitor's checkedOutMedia Inventory with a passed media object
+    /*
+     * checks if the visitor has space for additional checked-out items, 
+     * then appends the visitor's checkedOutMedia Inventory with a passed media object
+     */ 
     public void checkOutMedia(Media mediaTitle) {
-        checkedOutMedia.addItem(mediaTitle);
+        if (checkedOutMedia.getInventorySize() <= 5) {
+            checkedOutMedia.addItem(mediaTitle);
+        }
+        else {
+            System.out.println("I'm sorry, you've already checked out the maximum number of items."
+                    + " Please return items before requesting to check out additional items.");
+        }
     }
     
     // removes the passed media object from the visitor's checkedOutMedia Inventory. 
